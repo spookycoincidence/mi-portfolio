@@ -1,4 +1,3 @@
-// src/app/components/ProjectsCard.tsx
 import ProjectCard from './ProjectCard';
 
 const projects = [
@@ -54,7 +53,14 @@ const projects = [
 
 export default function ProjectsCard() {
   return (
-    <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-12 rounded-3xl shadow-2xl max-w-6xl w-full mt-12 mx-auto text-gray-900">
+    <div
+      className="
+        bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100
+        p-12 rounded-3xl shadow-2xl max-w-6xl w-full mt-12 mx-auto text-gray-900
+        sm:rounded-3xl sm:shadow-2xl sm:p-12
+        rounded-none shadow-none p-6
+      "
+    >
       <h2 className="text-4xl font-bold mb-8 text-left">Proyectos</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

@@ -1,6 +1,13 @@
 export default function ContactCard() {
   return (
-    <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-8 md:p-12 rounded-3xl shadow-2xl max-w-4xl w-full mx-auto text-gray-900 text-center">
+    <div
+      className="
+        bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 
+        p-8 md:p-12 rounded-3xl shadow-2xl max-w-4xl w-full mx-auto text-gray-900 text-center
+        sm:rounded-3xl sm:shadow-2xl sm:p-12
+        rounded-none shadow-none p-4
+      "
+    >
       <h2 className="text-4xl font-bold mb-4">¿Querés contactarme?</h2>
       <p className="text-lg mb-8">
         Estoy disponible para proyectos freelance, propuestas laborales o simplemente para charlar sobre tech, música y cine. Escribime!
