@@ -1,5 +1,6 @@
 // src/app/components/ProjectsCard.tsx
 import ProjectCard from './ProjectCard';
+
 const projects = [
   {
     title: 'Spooky Snake Game',
@@ -9,7 +10,7 @@ const projects = [
     imageSrc: '/spooky-snake.png',
     imageAlt: 'Captura del juego Spooky Snake',
   },
-   {
+  {
     title: 'Spookify',
     description:
       'Exploración de transiciones animadas usando View Transitions API en Next.js. Demo de efectos suaves y modernos en cambios de vista.',
@@ -53,7 +54,7 @@ const projects = [
 
 export default function ProjectsCard() {
   return (
-    <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-12 rounded-3xl shadow-2xl max-w-6xl w-full animate-float mt-12 mx-auto text-gray-900">
+    <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-12 rounded-3xl shadow-2xl max-w-6xl w-full mt-12 mx-auto text-gray-900">
       <h2 className="text-4xl font-bold mb-8 text-left">Proyectos</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

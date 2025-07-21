@@ -39,3 +39,4 @@ export default function ProjectCard({ title, description, link, imageSrc, imageA
     </div>
   );
 }
+
