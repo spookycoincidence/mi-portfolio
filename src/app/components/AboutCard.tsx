@@ -6,8 +6,8 @@ export default function AboutCard() {
       <div className="space-y-6 text-left">
         <div>
           <h3 className="text-2xl font-semibold mb-2">Software Engineer – Mercado Libre</h3>
+          <p className="text-gray-800 mb-1">📅 Enero 2020 – Julio 2021 | 📍 Argentina</p>
           <ul className="list-disc list-inside text-gray-800 space-y-1">
-            <li>Enero 2020 – Julio 2022</li>
             <li>Desarrollo en el equipo de KYC y Prevención de Fraude: validación de identidad, manejo de datos biométricos y protección de información sensible.</li>
             <li>Implementación de middleware en Golang que conectaba frontend y backend para procesos críticos.</li>
             <li>Migración de servicios de Java a Golang.</li>
@@ -18,8 +18,8 @@ export default function AboutCard() {
 
         <div>
           <h3 className="text-2xl font-semibold mb-2">Full Stack Developer – Andreani</h3>
+          <p className="text-gray-800 mb-1">📅 Agosto 2021 - Octubre 2021 | 📍 Argentina</p>
           <ul className="list-disc list-inside text-gray-800 space-y-1">
-            <li>Agosto 2021 - Octubre 2021</li>
             <li>Desarrollo de sistemas de trazabilidad y monitoreo logístico para la distribución de vacunas COVID-19.</li>
             <li>Refactor del sitio institucional y la plataforma de envíos.</li>
             <li>Implementación de herramientas de monitoreo que mejoraron la estabilidad y redujeron tiempos de respuesta ante fallas.</li>
@@ -28,8 +28,8 @@ export default function AboutCard() {
 
         <div>
           <h3 className="text-2xl font-semibold mb-2">Software Engineer – UALA</h3>
+          <p className="text-gray-800 mb-1">📅 Octubre 2021 - Diciembre 2022 | 📍 Argentina</p>
           <ul className="list-disc list-inside text-gray-800 space-y-1">
-            <li>Octubre 2021 - Diciembre 2022</li>
             <li>Desarrollo backend para la solución de cobros Ualá Bis: links de pago, QR, acreditación inmediata.</li>
             <li>Automatización del flujo de validación de identidad durante el onboarding, reduciendo el tiempo en un 50% y mejorando la experiencia de más de 1 millón de usuarios.</li>
             <li>Implementación y optimización de APIs REST para medios de pago.</li>
@@ -40,8 +40,8 @@ export default function AboutCard() {
 
         <div>
           <h3 className="text-2xl font-semibold mb-2">Golang & React Developer – Freelancer</h3>
+          <p className="text-gray-800 mb-1">📅 Enero 2023 – Actualidad | 📍 United States</p>
           <ul className="list-disc list-inside text-gray-800 space-y-1">
-            <li>Enero 2023 – Actualidad</li>
             <li>Desarrollo de aplicaciones web y APIs REST con arquitectura hexagonal y principios SOLID.</li>
             <li>Implementación de lógica de negocio, interfaces accesibles y experiencias de usuario optimizadas.</li>
             <li>Creación de e-commerce, landings y backoffice administrativo para ONGs y marcas.</li>
