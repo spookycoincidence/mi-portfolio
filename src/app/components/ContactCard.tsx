@@ -2,10 +2,10 @@ export default function ContactCard() {
   return (
     <div
       className="
-        bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 
-        p-8 md:p-12 rounded-3xl shadow-2xl max-w-4xl w-full mx-auto text-gray-900 text-center
-        sm:rounded-3xl sm:shadow-2xl sm:p-12
-        rounded-none shadow-none p-4
+        bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100
+        p-4 rounded-none shadow-none
+        md:p-12 md:rounded-3xl md:shadow-2xl
+        max-w-4xl w-full mx-auto text-gray-900 text-center
       "
     >
       <h2 className="text-4xl font-bold mb-4">¿Querés contactarme?</h2>

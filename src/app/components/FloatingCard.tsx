@@ -1,12 +1,13 @@
 export default function FloatingCard() {
   return (
-    <div className="
-      bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 
-      p-12 rounded-3xl shadow-2xl animate-float hover:animate-none 
-      max-w-6xl w-full mt-1
-      sm:rounded-3xl sm:shadow-2xl sm:animate-float
-      rounded-none shadow-none animate-none
-      ">
+    <div
+      className="
+        bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100
+        p-4 rounded-none shadow-none
+        md:p-12 md:rounded-3xl md:shadow-2xl
+        max-w-6xl w-full mt-1
+      "
+    >
       <div className="flex flex-col md:flex-row items-start gap-8">
         <div className="flex-1">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Huilén Vilches ✨</h1>
@@ -36,7 +37,7 @@ export default function FloatingCard() {
         <img
           src="/profile.jpg"
           alt="Huilén Vilches"
-          className="hidden sm:block w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-white shadow-md object-cover self-start"
+          className="w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-white shadow-md object-cover self-start"
         />
       </div>
     </div>

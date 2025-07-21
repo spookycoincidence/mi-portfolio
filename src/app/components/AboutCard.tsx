@@ -3,9 +3,9 @@ export default function AboutCard() {
     <div
       className="
         bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100
-        p-8 md:p-12 rounded-3xl shadow-2xl max-w-6xl w-full mt-12 mx-auto text-gray-900
-        sm:rounded-3xl sm:shadow-2xl sm:p-12
-        rounded-none shadow-none p-4
+        p-4 rounded-none shadow-none
+        md:p-12 md:rounded-3xl md:shadow-2xl
+        max-w-6xl w-full mt-12 mx-auto text-gray-900
       "
     >
       <h2 className="text-4xl font-bold mb-6 text-left">Experiencia Profesional</h2>
