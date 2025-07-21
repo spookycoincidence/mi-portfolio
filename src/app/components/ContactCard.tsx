@@ -1,10 +1,9 @@
-// src/app/components/ContactCard.tsx
 export default function ContactCard() {
   return (
-    <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-12 rounded-3xl shadow-2xl max-w-4xl w-full mx-auto text-gray-900 text-center">
+    <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-8 md:p-12 rounded-3xl shadow-2xl max-w-4xl w-full mx-auto text-gray-900 text-center">
       <h2 className="text-4xl font-bold mb-4">¿Querés contactarme?</h2>
       <p className="text-lg mb-8">
-        Si te gustaría trabajar conmigo, colaborar en un proyecto o simplemente charlar, escribime o contactame por mis redes. ¡Estoy siempre abierta a nuevas ideas!
+        Estoy disponible para proyectos freelance, propuestas laborales o simplemente para charlar sobre tech, música y cine. Escribime!
       </p>
 
       <div className="flex justify-center gap-6">

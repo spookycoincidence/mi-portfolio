@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import './globals.css';
 import { JetBrains_Mono } from 'next/font/google';
 

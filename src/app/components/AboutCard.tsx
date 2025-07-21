@@ -1,7 +1,6 @@
-// src/app/components/AboutCard.tsx
 export default function AboutCard() {
   return (
-    <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-12 rounded-3xl shadow-2xl max-w-6xl w-full mt-12 mx-auto text-gray-900">
+    <div className="bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-8 md:p-12 rounded-3xl shadow-2xl max-w-6xl w-full mt-12 mx-auto text-gray-900">
       <h2 className="text-4xl font-bold mb-6 text-left">Experiencia Profesional</h2>
 
       <div className="space-y-6 text-left">
