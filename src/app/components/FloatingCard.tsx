@@ -18,7 +18,7 @@ export default function FloatingCard() {
   const content = (
     <>
       <h1 className="text-4xl md:text-6xl font-bold mb-4">Huilén Vilches ✨</h1>
-      <p className="text-xl md:text-3xl mb-6">Full Stack Developer — Golang / React / AWS</p>
+      <p className="text-xl md:text-3xl mb-6">Full Stack Developer — Golang | React | AWS</p>
 
       <p className="mb-4">
         Desarrolladora fullstack con más de 4 años de experiencia en fintechs, e-commerce y logística, especializada en Golang y tecnologías cloud. Con conocimientos en React.
