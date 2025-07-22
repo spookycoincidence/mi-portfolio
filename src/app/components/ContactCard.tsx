@@ -18,7 +18,7 @@ export default function ContactCard() {
           href="mailto:huilenvilches@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-pink-500 font-semibold py-2 px-4 rounded-full shadow-md hover:bg-pink-100 transition"
+          className="bg-white border border-gray-300 text-gray-800 py-2 px-4 rounded shadow hover:bg-gray-100 transition"
         >
           Email 💌
         </a>
@@ -27,7 +27,7 @@ export default function ContactCard() {
           href="https://www.linkedin.com/in/huilenvilches/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-blue-500 font-semibold py-2 px-4 rounded-full shadow-md hover:bg-blue-100 transition"
+          className="bg-white border border-gray-300 text-gray-800 py-2 px-4 rounded shadow hover:bg-gray-100 transition"
         >
           LinkedIn 💜
         </a>
