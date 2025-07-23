@@ -1,6 +1,6 @@
 # 🌸 Mi Portfolio – Huilén Vilches
 
-Un portfolio pastel y encantador construido con **Next.js**, **Tailwind CSS**, animaciones con **Framer Motion**, íconos con **React Icons** y un toque mágico ✨ de diseño y código personalizado.
+Un portfolio pastel construido con **Next.js**, **Tailwind CSS**, animaciones con **Framer Motion**, íconos con **React Icons** y un toque mágico ✨ de diseño y código personalizado.
 
 🔗 [Ver en producción](https://mi-portfolio-sepia.vercel.app/)
 
@@ -33,12 +33,6 @@ Un portfolio pastel y encantador construido con **Next.js**, **Tailwind CSS**, a
 
 ---
 
-## 🧪 Detalles técnicos
-
-- ⚙️ Alias de import con `"@/*"` configurado en `tsconfig.json` y `next.config.js`.
-- 🧹 Tipado limpio en todos los componentes (`Props`, `useRef`, `MouseEvent`, etc).
-- 🚫 ESLint configurado para evitar `any` y forzar buenas prácticas.
-- 📱 **Diseño 100% responsive**, testeado en mobile, tablet y desktop.
 
 ## © 2025 Made with ❤️ by Huilén Vilches 
 
