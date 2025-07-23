@@ -1,4 +1,5 @@
 // src/app/components/FloatingCard.tsx
+// src/app/components/FloatingCard.tsx
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -21,7 +22,7 @@ export default function FloatingCard() {
     <motion.div
       initial={{ opacity: 0, scale: 0.98 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
     >
       <h1 className="text-4xl md:text-6xl font-bold mb-4">Huilén Vilches ✨</h1>
       <p className="text-xl md:text-3xl mb-6">Full Stack Developer — Golang | React | AWS</p>
@@ -52,9 +53,8 @@ export default function FloatingCard() {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: 'easeOut' }}
-      className={`bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-6 md:p-12 max-w-6xl w-full mx-auto mt-4
-        ${isMobile ? '' : 'rounded-3xl shadow-2xl animate-float hover:animate-none'}`}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className="bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-6 md:p-12 max-w-6xl w-full mx-auto mt-4 rounded-3xl shadow-2xl"
     >
       {isMobile ? (
         <div>{content}</div>
@@ -65,7 +65,7 @@ export default function FloatingCard() {
           <motion.img
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
+            transition={{ duration: 0.4, ease: 'easeOut' }}
             src="/profile.jpg"
             alt="Huilén Vilches"
             className="w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-white shadow-md object-cover self-start"
