@@ -1,10 +1,20 @@
+// src/app/components/ContactCard.tsx
 'use client';
 
 import { useState } from 'react';
 
+interface Heart {
+  id: number;
+  left: number;
+  size: number;
+  rotation: number;
+  xMovement: number;
+  duration: number;
+}
+
 export default function ContactCard() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [hearts, setHearts] = useState<any[]>([]);
+  const [hearts, setHearts] = useState<Heart[]>([]);  // <-- acá
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -13,17 +23,17 @@ export default function ContactCard() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const newHearts = Array.from({ length: 20 }).map((_, i) => ({
+    const newHearts: Heart[] = Array.from({ length: 20 }).map((_, i) => ({
       id: Date.now() + i,
-      left: Math.random() * 100, // posición horizontal
-      size: 16 + Math.random() * 24, // tamaño
-      rotation: Math.random() * 360, // rotación inicial
-      xMovement: (Math.random() - 0.5) * 100, // desplazamiento horizontal
-      duration: 2000 + Math.random() * 1000, // duración individual
+      left: Math.random() * 100,
+      size: 16 + Math.random() * 24,
+      rotation: Math.random() * 360,
+      xMovement: (Math.random() - 0.5) * 100,
+      duration: 2000 + Math.random() * 1000,
     }));
 
     setHearts(newHearts);
-    setTimeout(() => setHearts([]), 3000); // limpiar corazones después
+    setTimeout(() => setHearts([]), 3000);
     setFormData({ name: '', email: '', message: '' });
   };
 
