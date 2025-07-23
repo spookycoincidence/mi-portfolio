@@ -1,6 +1,8 @@
+// src/app/components/FloatingCard.tsx
 'use client';
 
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export default function FloatingCard() {
   const [isMobile, setIsMobile] = useState(false);
@@ -16,7 +18,11 @@ export default function FloatingCard() {
   }, []);
 
   const content = (
-    <>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.98 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
       <h1 className="text-4xl md:text-6xl font-bold mb-4">Huilén Vilches ✨</h1>
       <p className="text-xl md:text-3xl mb-6">Full Stack Developer — Golang | React | AWS</p>
 
@@ -39,11 +45,14 @@ export default function FloatingCard() {
         <a href="https://github.com/spookycoincidence" target="_blank" rel="noopener noreferrer" className="bg-white border border-gray-300 text-gray-800 px-4 py-2 rounded shadow hover:bg-gray-100 transition">GitHub 🧚‍♀️</a>
         <a href="https://www.linkedin.com/in/huilenvilches/" target="_blank" rel="noopener noreferrer" className="bg-white border border-gray-300 text-gray-800 px-4 py-2 rounded shadow hover:bg-gray-100 transition">LinkedIn 💜</a>
       </div>
-    </>
+    </motion.div>
   );
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: 'easeOut' }}
       className={`bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-6 md:p-12 max-w-6xl w-full mx-auto mt-4
         ${isMobile ? '' : 'rounded-3xl shadow-2xl animate-float hover:animate-none'}`}
     >
@@ -53,13 +62,16 @@ export default function FloatingCard() {
         <div className="flex flex-col md:flex-row items-start gap-8">
           <div className="flex-1">{content}</div>
 
-          <img
+          <motion.img
+            initial={{ opacity: 0, scale: 0.97 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
             src="/profile.jpg"
             alt="Huilén Vilches"
             className="w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-white shadow-md object-cover self-start"
           />
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }
