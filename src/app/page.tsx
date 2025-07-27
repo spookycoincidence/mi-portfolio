@@ -2,7 +2,6 @@ import Navbar from './components/Navbar';
 import FloatingCard from './components/FloatingCard';
 import ExperienceCard from './components/AboutCard';
 import ProjectsCard from './components/ProjectsCard';
-import ContactCard from './components/ContactCard';
 import { BaseHubForm } from './components/BaseHubForm';
 
 export default function Home() {
