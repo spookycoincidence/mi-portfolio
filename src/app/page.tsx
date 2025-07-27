@@ -3,6 +3,7 @@ import FloatingCard from './components/FloatingCard';
 import ExperienceCard from './components/AboutCard';
 import ProjectsCard from './components/ProjectsCard';
 import ContactCard from './components/ContactCard';
+import { BaseHubForm } from './components/BaseHubForm';
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="flex flex-col items-center justify-center px-6 py-10 max-w-7xl mx-auto w-full">
-        <ContactCard />
+        <BaseHubForm />
       </section>
     </main>
   );

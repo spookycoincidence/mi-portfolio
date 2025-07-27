@@ -1,6 +1,4 @@
-// src/app/components/ContactCard.tsx
 'use client';
-
 import { useState } from 'react';
 
 interface Heart {

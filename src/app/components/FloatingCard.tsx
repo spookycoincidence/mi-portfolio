@@ -1,5 +1,4 @@
 // src/app/components/FloatingCard.tsx
-// src/app/components/FloatingCard.tsx
 'use client';
 
 import { useState, useEffect } from 'react';
