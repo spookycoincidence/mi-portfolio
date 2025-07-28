@@ -16,22 +16,6 @@ Un portfolio pastel construido con **Next.js**, **Tailwind CSS**, animaciones co
 - ☁️ **React Icons** 
 - ☁️ **Vercel** 
 
----
-
-## 🎨 Estética general
-
-- 🎀 **Paleta pastel:** tonos suaves y armónicos, pensados para una experiencia visual serena y armoniosa.
-- 🎀 **Fondo en gradiente vertical**, desde un rosa claro (#f8e1e1) hacia blanco, dándole profundidad.
-
----
-
-## 🧚‍♀️ Animaciones y detalles 
-
-### ❤️ Corazones flotantes
-- Al hacer hover en la **card de contacto**, una lluvia de corazones animados ❤️ aparece flotando hacia arriba.
-- Corazones generados como elementos absolutos con movimiento aleatorio mediante `@keyframes`.
-
----
 
 
 ## © 2025 Made with ❤️ by SpookyCoincidence
