@@ -34,5 +34,5 @@ Un portfolio pastel construido con **Next.js**, **Tailwind CSS**, animaciones co
 ---
 
 
-## © 2025 Made with ❤️ by Huilén Vilches 
+## © 2025 Made with ❤️ by SpookyCoincidence
 
