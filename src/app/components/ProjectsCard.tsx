@@ -59,7 +59,7 @@ const projects = [
     title: 'Go CRUD API',
     description:
       'API REST CRUD desarrollada en Go con arquitectura limpia. Ideal para gestionar recursos de forma eficiente y estructurada.',
-    link: 'https://github.com/spookycoincidence/go-crud-api',
+    link: 'https://github.com/spookycoincidence/-go-crud-api-portfolio',
     imageSrc: '/go-crud-api.png',
     imageAlt: 'Código fuente de Go CRUD API',
   },
@@ -67,7 +67,7 @@ const projects = [
     title: 'Go Workflow API',
     description:
       'API de workflows construida en Go para orquestar y gestionar procesos de negocio de forma modular.',
-    link: 'https://github.com/spookycoincidence/go-workflow-api',
+    link: 'https://github.com/spookycoincidence/go-workflow-api-portfolio',
     imageSrc: '/go-workflow-api.png',
     imageAlt: 'Código fuente de Go Workflow API',
   },
@@ -75,9 +75,17 @@ const projects = [
     title: 'Go Clean Task API',
     description:
       'API en Go para gestión de tareas implementando Clean Architecture. Diseño mantenible y escalable.',
-    link: 'https://github.com/spookycoincidence/go-clean-task-api',
+    link: 'https://github.com/spookycoincidence/go-clean-template-portfolio',
     imageSrc: '/go-clean-task-api.png',
     imageAlt: 'Código fuente de Go Clean Task API',
+  },
+ {
+    title: 'Go Password Generator',
+    description:
+      'Generador de contraseñas en Go.',
+    link: 'https://github.com/spookycoincidence/go-pass-portfolio',
+    imageSrc: '/go-pass.png',
+    imageAlt: 'Código fuente go pass',
   },
   {
     title: 'Transport Challenge',
@@ -103,14 +111,6 @@ const projects = [
     imageSrc: '/hx-payments-system.png',
     imageAlt: 'Código fuente de HX Payments System',
   },
-    {
-    title: 'Go Password Generator',
-    description:
-      'Generador de contraseñas en Go.',
-    link: 'https://github.com/spookycoincidence/go-pass',
-    imageSrc: '/go-pass.png',
-    imageAlt: 'Código fuente go pass',
-  },
    {
     title: 'Financial TX Challenge',
     description:
@@ -118,14 +118,6 @@ const projects = [
     link: 'https://github.com/spookycoincidence/financial-tx-challenge',
     imageSrc: '/financial-tx.png',
     imageAlt: 'Código del Financial TX Challenge',
-  },
-       {
-    title: 'Tarot y Café',
-    description:
-      'Web para cafeteria esoterica. ',
-    link: 'https://tarotycafe.godaddysites.com/',
-    imageSrc: '/tarotycafe.png',
-    imageAlt: 'tarot y cafe',
   },
      {
     title: 'American Stone and Marble',
@@ -142,14 +134,6 @@ const projects = [
     link: 'https://cafebaires.com/',
     imageSrc: '/baires.png',
     imageAlt: 'baires',
-  },
-     {
-    title: 'Sinner: Ink & Piercing Artistry',
-    description:
-      'Web para local de tatuajes y piercing.',
-    link: 'https://site-9stmz2cz6.godaddysites.com/',
-    imageSrc: '/sinner.png',
-    imageAlt: 'sinner',
   },
 ];
 export default function ProjectsCard() {
