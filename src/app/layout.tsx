@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import './globals.css';
 import { JetBrains_Mono } from 'next/font/google';
 
@@ -17,8 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
 
-        <footer className="w-full text-center py-10 text-sm transition-all duration-500 ease-in-out">
-          © 2025 Made with ❤️ by Huilén Vilches
+        {/* solo visible en desktop */}
+        <footer className="hidden md:block w-full text-center py-10 text-sm transition-all duration-500 ease-in-out">
+          © 2025 Made with <span aria-label="corazón" role="img">❤️</span> by Huilén Vilches
         </footer>
       </body>
     </html>

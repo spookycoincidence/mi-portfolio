@@ -28,3 +28,7 @@ main {
   min-height: 100vh;
   overflow-y: auto;
 }
+
+html {
+  scroll-behavior: smooth;
+}

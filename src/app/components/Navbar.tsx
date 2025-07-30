@@ -38,10 +38,10 @@ export default function Navbar() {
       </button>
 
       {open && (
-        <div className="absolute right-0 mt-3 bg-white text-gray-900 rounded-lg shadow-lg p-5 space-y-3 w-48">
-          <a href="#experience" className="block hover:underline">Experiencia Profesional</a>
-          <a href="#projects" className="block hover:underline">Proyectos</a>
-          <a href="#contact" className="block hover:underline">Contacto</a>
+        <div className="absolute right-0 mt-3 bg-white text-gray-900 rounded-lg shadow-lg p-5 space-y-3 w-48 md:w-56">
+          <a href="#experience" className="block hover:underline text-sm md:text-base">Experiencia Profesional</a>
+          <a href="#projects" className="block hover:underline text-sm md:text-base">Proyectos</a>
+          <a href="#contact" className="block hover:underline text-sm md:text-base">Contacto</a>
         </div>
       )}
     </nav>

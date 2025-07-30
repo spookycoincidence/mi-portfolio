@@ -1,6 +1,3 @@
-
-// src/app/components/ProjectsCard.tsx
-
 "use client";
 
 import { useState } from 'react';
@@ -39,7 +36,7 @@ const projects = [
     imageSrc: '/tetris-game.png',
     imageAlt: 'Captura del Tetris Game',
   },
-    {
+  {
     title: 'Technicolor Blog',
     description:
       'Blog sobre Technicolor, desarrollado con Next.js, con contenido educativo y multimedia.',
@@ -72,6 +69,13 @@ const projects = [
     imageAlt: 'Código fuente de Go Workflow API',
   },
   {
+    title: 'Go Password Generator',
+    description: 'Generador de contraseñas en Go.',
+    link: 'https://github.com/spookycoincidence/go-pass-portfolio',
+    imageSrc: '/go-pass.png',
+    imageAlt: 'Código fuente go pass',
+  },
+  {
     title: 'Go Clean Task API',
     description:
       'API en Go para gestión de tareas implementando Clean Architecture. Diseño mantenible y escalable.',
@@ -79,14 +83,7 @@ const projects = [
     imageSrc: '/go-clean-task-api.png',
     imageAlt: 'Código fuente de Go Clean Task API',
   },
- {
-    title: 'Go Password Generator',
-    description:
-      'Generador de contraseñas en Go.',
-    link: 'https://github.com/spookycoincidence/go-pass-portfolio',
-    imageSrc: '/go-pass.png',
-    imageAlt: 'Código fuente go pass',
-  },
+  // se ven despues del boton de ver mas
   {
     title: 'Transport Challenge',
     description:
@@ -95,7 +92,7 @@ const projects = [
     imageSrc: '/transport-challenge.png',
     imageAlt: 'Configuración del Transport Challenge',
   },
-    {
+  {
     title: 'HX Payments Web',
     description:
       'Frontend en React para el sistema HX Payments. Diseño simple para gestionar pagos y transacciones.',
@@ -111,7 +108,7 @@ const projects = [
     imageSrc: '/hx-payments-system.png',
     imageAlt: 'Código fuente de HX Payments System',
   },
-   {
+  {
     title: 'Financial TX Challenge',
     description:
       'Challenge de transacciones financieras en Go. Simulación de movimientos, control y trazabilidad.',
@@ -119,56 +116,57 @@ const projects = [
     imageSrc: '/financial-tx.png',
     imageAlt: 'Código del Financial TX Challenge',
   },
-     {
+  {
     title: 'American Stone and Marble',
-    description:
-      'Web para empresa de marmol en Estados Unidos. ',
+    description: 'Web para empresa de marmol en Estados Unidos.',
     link: 'https://americanstonemarble.com/',
     imageSrc: '/stone.png',
     imageAlt: 'foto de american stone and marble',
   },
-     {
+  {
     title: 'Cafe Baires',
-    description:
-      'Web para cafeteria en New Jersey. ',
+    description: 'Web para cafeteria en New Jersey.',
     link: 'https://cafebaires.com/',
     imageSrc: '/baires.png',
     imageAlt: 'baires',
   },
 ];
+
 export default function ProjectsCard() {
   const [showAll, setShowAll] = useState(false);
-  const visibleProjects = showAll ? projects : projects.slice(0, 9);
+  const visibleProjects = showAll ? projects : projects.slice(0, 10);
 
   return (
     <div
-      className="
-        bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100
-        p-4 rounded-none shadow-none
-        md:p-12 md:rounded-3xl md:shadow-2xl
-        max-w-6xl w-full mt-12 mx-auto text-gray-900
-      "
+      className={`
+        w-full max-w-6xl mx-auto mt-12 text-gray-900
+        md:p-12 md:rounded-3xl md:shadow-2xl md:bg-gradient-to-br md:from-purple-100 md:via-pink-100 md:to-blue-100
+        p-0 shadow-none rounded-none
+      `}
     >
-      <h2 className="text-4xl font-bold mb-8 text-left">Proyectos</h2>
+      <h2 className="text-2xl font-bold mb-3 leading-tight px-4 md:text-4xl md:px-0 md:mb-8 text-left">
+        Proyectos
+      </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 px-2 md:px-0">
         {visibleProjects.map((project, i) => (
-          <ProjectCard
-            key={i}
-            title={project.title}
-            description={project.description}
-            link={project.link}
-            imageSrc={project.imageSrc}
-            imageAlt={project.imageAlt}
-          />
+          <div key={i} className="w-full">
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              link={project.link}
+              imageSrc={project.imageSrc}
+              imageAlt={project.imageAlt}
+            />
+          </div>
         ))}
       </div>
 
       {!showAll && (
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-6 md:mt-8 px-4 md:px-0">
           <button
             onClick={() => setShowAll(true)}
-            className="bg-white border border-gray-300 text-gray-800 px-4 py-2 rounded shadow hover:bg-gray-100 transition"
+            className="bg-white border border-gray-300 text-gray-800 px-3 py-1 rounded shadow hover:bg-gray-100 transition text-xs md:text-sm"
           >
             Ver más 💜
           </button>
