@@ -110,7 +110,7 @@ export interface BlockColor {
     __typename: 'BlockColor'
 }
 
-export type BlockDocument = (ContactForm | _AgentSTART) & { __isUnion?: true }
+export type BlockDocument = (ContactForm | _AgentStart) & { __isUnion?: true }
 
 export interface BlockDocumentSys {
     apiNamePath: Scalars['String']
@@ -297,9 +297,11 @@ export interface NewSubmitNotification {
 }
 
 export interface Query {
-    _agent: (_AgentSTART | null)
+    _agent: (_AgentStart | null)
     /** Query across the custom AI agents in the repository. */
     _agents: _agents
+    /** The diff between the current branch and the head commit. */
+    _diff: Scalars['JSON']
     /** The structure of the repository. Used by START. */
     _structure: Scalars['JSON']
     _sys: RepoSys
@@ -341,7 +343,7 @@ export interface Variant {
     __typename: 'Variant'
 }
 
-export interface _AgentSTART {
+export interface _AgentStart {
     _agentKey: Scalars['String']
     _analyticsKey: Scalars['String']
     _dashboardUrl: Scalars['String']
@@ -366,7 +368,7 @@ export interface _AgentSTART {
     searchTheWeb: Scalars['Boolean']
     slackInstallUrl: Scalars['String']
     systemPrompt: Scalars['String']
-    __typename: '_AgentSTART'
+    __typename: '_AgentStart'
 }
 
 export interface _BranchInfo {
@@ -435,7 +437,7 @@ export type _ResolveTargetsWithEnum = 'id' | 'objectName'
 export type _StructureFormatEnum = 'json' | 'xml'
 
 export interface _agents {
-    start: _AgentSTART
+    start: _AgentStart
     __typename: '_agents'
 }
 
@@ -494,7 +496,7 @@ export interface BlockDocumentGenqlSelection{
     _sys?: BlockDocumentSysGenqlSelection
     _title?: boolean | number
     on_ContactForm?: ContactFormGenqlSelection
-    on__AgentSTART?: _AgentSTARTGenqlSelection
+    on__AgentStart?: _AgentStartGenqlSelection
     __typename?: boolean | number
 }
 
@@ -749,11 +751,15 @@ export interface NewSubmitNotificationGenqlSelection{
 export interface NumberFilter {eq?: (Scalars['Float'] | null),gt?: (Scalars['Float'] | null),gte?: (Scalars['Float'] | null),isNull?: (Scalars['Boolean'] | null),lt?: (Scalars['Float'] | null),lte?: (Scalars['Float'] | null),neq?: (Scalars['Float'] | null)}
 
 export interface QueryGenqlSelection{
-    _agent?: (_AgentSTARTGenqlSelection & { __args: {
+    _agent?: (_AgentStartGenqlSelection & { __args: {
     /** The ID of the agent. */
     id: Scalars['String']} })
     /** Query across the custom AI agents in the repository. */
     _agents?: _agentsGenqlSelection
+    /** The diff between the current branch and the head commit. */
+    _diff?: { __args: {
+    /** Simplified diff returns only the items array showing statuses. */
+    simplified?: (Scalars['Boolean'] | null)} } | boolean | number
     /** The structure of the repository. Used by START. */
     _structure?: { __args: {
     /** The format of the structure. */
@@ -818,7 +824,7 @@ export interface VariantGenqlSelection{
     __typename?: boolean | number
 }
 
-export interface _AgentSTARTGenqlSelection{
+export interface _AgentStartGenqlSelection{
     _agentKey?: boolean | number
     _analyticsKey?: { __args: {
     /**
@@ -914,7 +920,7 @@ export interface _PlaygroundInfoGenqlSelection{
 }
 
 export interface _agentsGenqlSelection{
-    start?: _AgentSTARTGenqlSelection
+    start?: _AgentStartGenqlSelection
     __typename?: boolean | number
 }
 
@@ -1015,9 +1021,9 @@ export interface FragmentsMap {
     root: Variant,
     selection: VariantGenqlSelection,
 }
-  _AgentSTART: {
-    root: _AgentSTART,
-    selection: _AgentSTARTGenqlSelection,
+  _AgentStart: {
+    root: _AgentStart,
+    selection: _AgentStartGenqlSelection,
 }
   _BranchInfo: {
     root: _BranchInfo,
