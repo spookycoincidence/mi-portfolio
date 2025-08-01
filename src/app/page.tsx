@@ -3,6 +3,7 @@ import FloatingCard from './components/FloatingCard';
 import ExperienceCard from './components/AboutCard';
 import ProjectsCard from './components/ProjectsCard';
 import { BaseHubForm } from './components/BaseHubForm';
+import PlaylistCard from './components/PlaylistCard';
 
 export default function Home() {
   return (
@@ -24,7 +25,10 @@ export default function Home() {
       <section id="contact" className="flex flex-col items-center justify-center px-6 py-10 max-w-7xl mx-auto w-full">
         <BaseHubForm />
       </section>
+
+      <section id="playlist" className="flex flex-col items-center justify-center px-6 py-10 max-w-7xl mx-auto w-full">
+        <PlaylistCard />
+      </section>
     </main>
   );
 }
-
