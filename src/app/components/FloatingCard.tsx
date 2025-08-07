@@ -31,17 +31,18 @@ export default function FloatingCard() {
       </p>
 
       <p className="mb-3 text-xs leading-snug md:text-base">
-        Desarrolladora fullstack con más de 4 años de experiencia en fintechs, e-commerce y logística, especializada en Golang y tecnologías cloud. Con conocimientos en React.
+        Soy programadora semi senior con más de 4 años de experiencia en el desarrollo de software. Trabajé en fintechs, e-commerce y logística, y también participé como freelancer en proyectos que combinan desarrollo, diseño, estrategia digital y branding.
         <br /><br />
-        Participé en proyectos de alto impacto como validación de identidad (KYC), prevención de fraude, y desarrollo de pasarelas de pago.
+        Me siento muy cómoda trabajando con Golang y React, disfruto construir productos con arquitecturas limpias, microservicios y buenas prácticas de testing y CI/CD.
         <br /><br />
-        Trabajo con arquitecturas limpias, microservicios y prácticas modernas de testing y CI/CD.
+        Me apasiona formar parte de equipos que buscan innovar, mejorar constantemente y generar impacto. Soy muy curiosa y me encanta aprender, por eso siento que el mundo IT es el lugar ideal para mí: siempre hay algo nuevo para descubrir.
         <br /><br />
-        Me motiva contribuir a soluciones con impacto social y ser parte de equipos que priorizan la innovación, la mejora continua y el aprendizaje colaborativo.
+        Además soy fanática de los Beatles y del cine en technicolor.
+        <br /><br />
       </p>
 
       <p className="mb-3 text-xs leading-snug md:text-base">
-        Además soy fanática de los Beatles, del cine en Technicolor, y disfruto pasar tiempo con mi familia y amigos.
+        
       </p>
 
       <div className="flex gap-2 mt-4 flex-wrap md:gap-4">
@@ -94,7 +95,7 @@ export default function FloatingCard() {
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, ease: 'easeOut' }}
-            src="/profile.jpg"
+            src="/profile.jpeg"
             alt="Huilén Vilches"
             className="
               w-28 h-28 rounded-full border-4 border-white shadow-md object-cover self-start

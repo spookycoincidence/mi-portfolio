@@ -69,10 +69,10 @@ const projects = [
     imageAlt: 'Código fuente de Go Workflow API',
   },
   {
-    title: 'Go Password Generator',
-    description: 'Generador de contraseñas en Go.',
+    title: 'Portfolio Template',
+    description: 'A customizable personal portfolio built with Next.js 14, Tailwind CSS, and Framer Motion.',
     link: 'https://github.com/spookycoincidence/go-pass-portfolio',
-    imageSrc: '/go-pass.pixel.png',
+    imageSrc: '/portfoliostarter.jpg',
     imageAlt: 'Código fuente go pass',
   },
   {
@@ -84,6 +84,13 @@ const projects = [
     imageAlt: 'Código fuente de Go Clean Task API',
   },
   // se ven despues del boton de ver mas
+    {
+    title: 'Go Password Generator',
+    description: 'Generador de contraseñas en Go.',
+    link: 'https://github.com/spookycoincidence/go-pass-portfolio',
+    imageSrc: '/go-pass.pixel.png',
+    imageAlt: 'Código fuente go pass',
+  },
   {
     title: 'Transport Challenge',
     description:
@@ -113,7 +120,7 @@ const projects = [
     description:
       'Challenge de transacciones financieras en Go. Simulación de movimientos, control y trazabilidad.',
     link: 'https://github.com/spookycoincidence/financial-tx-challenge',
-    imageSrc: '/financial.pixel.png',
+    imageSrc: '/financial.pixel.jpg',
     imageAlt: 'Código del Financial TX Challenge',
   },
   {

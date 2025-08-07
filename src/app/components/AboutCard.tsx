@@ -85,7 +85,11 @@ export default function AboutCard() {
         <div>
           <h3 className="text-lg font-semibold mb-1 md:text-2xl md:mb-2">Stack</h3>
           <p className="text-gray-800 text-xs md:text-base">
-            Golang, React, TypeScript, Next.js, MySQL, AWS, Docker, Tailwind, Postman
+            <strong>Golang & React</strong>, TypeScript, Next.js, MySQL, AWS, Docker, Tailwind, Postman. <br />
+            Gin, Echo, Go Modules, Testify, Wire, DataDog, New Relic. <br />
+            Framer Motion, Radix UI, CSS Modules. <br />
+            Railway, Vercel, Kubernetes, Terraform, GitHub Actions. <br />
+            Figma, Adobe Illustrator.
           </p>
         </div>
       </div>

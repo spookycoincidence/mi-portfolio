@@ -24,10 +24,10 @@ export function BaseHubForm() {
             {/* Mobile*/}
             <div className="md:hidden text-center px-4 py-10">
               <h2 className="text-xl font-bold mb-2 text-gray-900">
-                ¿Querés contactarme?
+                ¿Querés que hablemos?
               </h2>
               <p className="text-sm text-gray-700 mb-4">
-                Estoy disponible para proyectos freelance, propuestas laborales o simplemente para charlar sobre tech, música y cine.
+                Estoy disponible para proyectos freelance, propuestas laborales o para charlar sobre tech, música y cine.
               </p>
               <div className="flex flex-col gap-3 items-center">
                 <a
@@ -49,10 +49,9 @@ export function BaseHubForm() {
 
             {/* Desktop */}
             <div className="hidden md:block relative bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-12 rounded-3xl shadow-2xl max-w-4xl w-full mx-auto text-gray-900 text-center overflow-hidden">
-              <h2 className="text-4xl font-bold mb-4">¿Querés contactarme?</h2>
+              <h2 className="text-4xl font-bold mb-4">¿Querés que hablemos?</h2>
               <p className="text-lg mb-8">
-                Estoy disponible para proyectos freelance, propuestas laborales o
-                simplemente para charlar sobre tech, música y cine. ¡Escribime!
+                Estoy disponible para proyectos freelance, propuestas laborales o para charlar sobre tech, música y cine. Escribime!
               </p>
               <form
                 className="space-y-4 max-w-md mx-auto text-left relative"
