@@ -112,7 +112,7 @@ const projects = [
     description:
       'Sistema de pagos robusto hecho en Go, orientado a transacciones seguras y procesamiento financiero.',
     link: 'https://github.com/spookycoincidence/hx-payments-system',
-    imageSrc: '/hx-system.pixel.png',
+    imageSrc: '/hx-system.pixel.jpg',
     imageAlt: 'Código fuente de HX Payments System',
   },
   {

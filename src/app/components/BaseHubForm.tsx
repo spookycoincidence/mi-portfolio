@@ -21,36 +21,9 @@ export function BaseHubForm() {
 
         return (
           <>
-            {/* Mobile*/}
-            <div className="md:hidden text-center px-4 py-10">
-              <h2 className="text-xl font-bold mb-2 text-gray-900">
-                ¿Querés que hablemos?
-              </h2>
-              <p className="text-sm text-gray-700 mb-4">
-                Estoy disponible para proyectos freelance, propuestas laborales o para charlar sobre tech, música y cine.
-              </p>
-              <div className="flex flex-col gap-3 items-center">
-                <a
-                  href="mailto:huilenvilches@gmail.com"
-                  className="bg-white border border-gray-300 text-gray-800 text-xs px-3 py-1.5 rounded-md shadow hover:bg-gray-100 transition"
-                >
-                  Email 💌
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/huilenvilches/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white border border-gray-300 text-gray-800 text-xs px-3 py-1.5 rounded-md shadow hover:bg-gray-100 transition"
-                >
-                  LinkedIn 💜
-                </a>
-              </div>
-            </div>
-
-            {/* Desktop */}
-            <div className="hidden md:block relative bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-12 rounded-3xl shadow-2xl max-w-4xl w-full mx-auto text-gray-900 text-center overflow-hidden">
-              <h2 className="text-4xl font-bold mb-4">¿Querés que hablemos?</h2>
-              <p className="text-lg mb-8">
+            <div className="relative md:bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 md:p-12 md:rounded-3xl md:shadow-2xl max-w-4xl w-full mx-auto text-gray-900 text-center overflow-hidden">
+              <h2 className="text-2xl md:text-4xl font-bold mb-4">¿Querés que hablemos?</h2>
+              <p className="text-base md:text-lg mb-8">
                 Estoy disponible para proyectos freelance, propuestas laborales o para charlar sobre tech, música y cine. Escribime!
               </p>
               <form
