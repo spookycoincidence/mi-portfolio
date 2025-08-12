@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
@@ -71,7 +71,7 @@ const projects = [
   {
     title: 'Portfolio Template',
     description: 'A customizable personal portfolio built with Next.js 14, Tailwind CSS, and Framer Motion.',
-    link: 'https://github.com/spookycoincidence/go-pass-portfolio',
+    link: 'https://github.com/spookycoincidence/portfolio-starter',
     imageSrc: '/portfoliostarter.jpg',
     imageAlt: 'Código fuente go pass',
   },
@@ -147,7 +147,7 @@ export default function ProjectsCard() {
     <div
       className={`
         w-full max-w-6xl mx-auto mt-12 text-gray-900
-        md:p-12 md:rounded-3xl md:shadow-2xl md:bg-gradient-to-br md:from-purple-100 md:via-pink-100 md:to-blue-100
+        md:p-12 md:rounded-3xl md:shadow-2xl md:bg-gradient-to-br md:from-[#c6e6f5] md:via-[#fdd8e5] md:to-[#e7d3f5]
         p-0 shadow-none rounded-none
       `}
     >

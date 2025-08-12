@@ -11,7 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <body className={`${jetBrainsMono.className} bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 text-black scroll-smooth`}>
+      <body
+        className={`${jetBrainsMono.className} bg-gradient-to-br from-[#c6e6f5] via-[#fdd8e5] to-[#e7d3f5] text-black scroll-smooth`}
+      >
         <main className="transition-all duration-500 ease-in-out min-h-[80vh]">
           {children}
         </main>

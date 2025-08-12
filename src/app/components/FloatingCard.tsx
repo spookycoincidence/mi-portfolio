@@ -41,9 +41,7 @@ export default function FloatingCard() {
         <br /><br />
       </p>
 
-      <p className="mb-3 text-xs leading-snug md:text-base">
-        
-      </p>
+      <p className="mb-3 text-xs leading-snug md:text-base"></p>
 
       <div className="flex gap-2 mt-4 flex-wrap md:gap-4">
         <a
@@ -80,14 +78,14 @@ export default function FloatingCard() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className={`
-        ${isMobile ? 'p-3' : 'bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-3 rounded-3xl shadow-2xl md:p-12'}
+        ${isMobile
+          ? 'p-3'
+          : 'bg-gradient-to-br from-[#c6e6f5] via-[#fdd8e5] to-[#e7d3f5] p-3 rounded-3xl shadow-2xl md:p-12'}
         max-w-full mx-auto mt-4 md:max-w-6xl
       `}
     >
       {isMobile ? (
-        <div className="flex flex-col items-start gap-4">
-          {content}
-        </div>
+        <div className="flex flex-col items-start gap-4">{content}</div>
       ) : (
         <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
           <div className="flex-1 max-w-full">{content}</div>

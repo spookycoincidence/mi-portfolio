@@ -49,7 +49,7 @@ export function BaseHubForm() {
                       <Input
                         {...field}
                         rows={4}
-                        className="w-full border border-gray-300 rounded p-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-200"
+                        className="w-full border border-gray-300 rounded p-2 shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-pink-200"
                       />
                     </label>
                   );

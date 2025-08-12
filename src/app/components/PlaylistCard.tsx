@@ -9,7 +9,7 @@ export default function PlaylistCard() {
           Playlist para programar 🎧
         </h2>
         <p className="text-sm text-gray-700 mb-4">
-        Soundtrack diario.
+          Soundtrack diario.
         </p>
         <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-md">
           <iframe
@@ -24,7 +24,7 @@ export default function PlaylistCard() {
       </div>
 
       {/* Desktop */}
-      <div className="hidden md:block relative bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 p-12 rounded-3xl shadow-2xl max-w-4xl w-full mx-auto text-gray-900 text-center overflow-hidden">
+      <div className="hidden md:block relative bg-gradient-to-br from-[#c6e6f5] via-[#fdd8e5] to-[#e7d3f5] p-12 rounded-3xl shadow-2xl max-w-4xl w-full mx-auto text-gray-900 text-center overflow-hidden">
         <h2 className="text-4xl font-bold mb-4">Playlist para programar 🎧</h2>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
           Soundtrack diario.
@@ -43,4 +43,3 @@ export default function PlaylistCard() {
     </>
   );
 }
-
