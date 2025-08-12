@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { HiOutlineMail } from "react-icons/hi"; 
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function FloatingCard() {
   const [isMobile, setIsMobile] = useState(false);
@@ -38,36 +40,65 @@ export default function FloatingCard() {
         Me apasiona formar parte de equipos que buscan innovar, mejorar constantemente y generar impacto. Soy muy curiosa y me encanta aprender, por eso siento que el mundo IT es el lugar ideal para mí: siempre hay algo nuevo para descubrir.
         <br /><br />
         Además soy fanática de los Beatles y del cine en technicolor.
-        <br /><br />
       </p>
 
-      <p className="mb-3 text-xs leading-snug md:text-base"></p>
-
-      <div className="flex gap-2 mt-4 flex-wrap md:gap-4">
-        <a
-          href="mailto:huilenvilches@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white border border-gray-300 text-gray-800 px-2 py-1 rounded shadow hover:bg-gray-100 transition text-xs md:text-sm"
-        >
-          Email 💌
-        </a>
-        <a
-          href="https://github.com/spookycoincidence"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white border border-gray-300 text-gray-800 px-2 py-1 rounded shadow hover:bg-gray-100 transition text-xs md:text-sm"
-        >
-          GitHub 🧚‍♀️
-        </a>
-        <a
-          href="https://www.linkedin.com/in/huilenvilches/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white border border-gray-300 text-gray-800 px-2 py-1 rounded shadow hover:bg-gray-100 transition text-xs md:text-sm"
-        >
-          LinkedIn 💜
-        </a>
+      {/* Botones o iconos según pantalla */}
+      <div className="flex gap-3 mt-4 flex-wrap items-center">
+        {isMobile ? (
+          <>
+            <a
+              href="mailto:huilenvilches@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-gray-700 hover:text-gray-900"
+            >
+              <HiOutlineMail />
+            </a>
+            <a
+              href="https://github.com/spookycoincidence"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-gray-700 hover:text-gray-900"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/huilenvilches/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-gray-700 hover:text-gray-900"
+            >
+              <FaLinkedinIn />
+            </a>
+          </>
+        ) : (
+          <>
+            <a
+              href="mailto:huilenvilches@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white border border-gray-300 text-gray-800 px-2 py-1 rounded shadow hover:bg-gray-100 transition text-xs md:text-sm"
+            >
+              Email 💌
+            </a>
+            <a
+              href="https://github.com/spookycoincidence"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white border border-gray-300 text-gray-800 px-2 py-1 rounded shadow hover:bg-gray-100 transition text-xs md:text-sm"
+            >
+              GitHub 🧚‍♀️
+            </a>
+            <a
+              href="https://www.linkedin.com/in/huilenvilches/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white border border-gray-300 text-gray-800 px-2 py-1 rounded shadow hover:bg-gray-100 transition text-xs md:text-sm"
+            >
+              LinkedIn 💜
+            </a>
+          </>
+        )}
       </div>
     </motion.div>
   );
