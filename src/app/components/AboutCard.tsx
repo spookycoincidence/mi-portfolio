@@ -12,16 +12,16 @@ export default function AboutCard() {
         Experiencia Profesional
       </h2>
 
-      <div className="space-y-4 md:space-y-6 text-left">
-        {/** Mercado Libre */}
-        <div>
-          <h3 className="text-lg font-semibold mb-1 md:text-2xl md:mb-2">
+      <div className="space-y-8 md:space-y-6 text-left">
+        {/* Mercado Libre */}
+        <div className="leading-relaxed">
+          <h3 className="text-xl font-semibold mb-2 md:text-2xl md:mb-2">
             Software Engineer – Mercado Libre
           </h3>
-          <p className="text-gray-800 mb-1 text-xs md:text-base">
+          <p className="text-gray-800 mb-2 text-sm md:text-base">
             📅 Enero 2020 – Julio 2021 | 📍 Argentina
           </p>
-          <ul className="list-disc list-inside text-gray-800 space-y-1 text-xs md:text-base">
+          <ul className="list-disc list-inside text-gray-800 space-y-2 text-sm md:text-base">
             <li>
               Desarrollo en el equipo de KYC y Prevención de Fraude: validación de
               identidad, manejo de datos biométricos y protección de información sensible.
@@ -33,30 +33,30 @@ export default function AboutCard() {
           </ul>
         </div>
 
-        {/** Andreani */}
-        <div>
-          <h3 className="text-lg font-semibold mb-1 md:text-2xl md:mb-2">
+        {/* Andreani */}
+        <div className="leading-relaxed">
+          <h3 className="text-xl font-semibold mb-2 md:text-2xl md:mb-2">
             Full Stack Developer – Andreani
           </h3>
-          <p className="text-gray-800 mb-1 text-xs md:text-base">
+          <p className="text-gray-800 mb-2 text-sm md:text-base">
             📅 Agosto 2021 - Octubre 2021 | 📍 Argentina
           </p>
-          <ul className="list-disc list-inside text-gray-800 space-y-1 text-xs md:text-base">
+          <ul className="list-disc list-inside text-gray-800 space-y-2 text-sm md:text-base">
             <li>Desarrollo de sistemas de trazabilidad y monitoreo logístico para la distribución de vacunas COVID-19.</li>
             <li>Refactor del sitio institucional y la plataforma de envíos.</li>
             <li>Implementación de herramientas de monitoreo que mejoraron la estabilidad y redujeron tiempos de respuesta ante fallas.</li>
           </ul>
         </div>
 
-        {/** Ualá */}
-        <div>
-          <h3 className="text-lg font-semibold mb-1 md:text-2xl md:mb-2">
+        {/* Ualá */}
+        <div className="leading-relaxed">
+          <h3 className="text-xl font-semibold mb-2 md:text-2xl md:mb-2">
             Software Engineer – UALA
           </h3>
-          <p className="text-gray-800 mb-1 text-xs md:text-base">
+          <p className="text-gray-800 mb-2 text-sm md:text-base">
             📅 Octubre 2021 - Diciembre 2022 | 📍 Argentina
           </p>
-          <ul className="list-disc list-inside text-gray-800 space-y-1 text-xs md:text-base">
+          <ul className="list-disc list-inside text-gray-800 space-y-2 text-sm md:text-base">
             <li>Desarrollo backend para la solución de cobros Ualá Bis: links de pago, QR, acreditación inmediata.</li>
             <li>Automatización del flujo de validación de identidad durante el onboarding, reduciendo el tiempo en un 50%.</li>
             <li>Implementación y optimización de APIs REST para medios de pago.</li>
@@ -65,15 +65,15 @@ export default function AboutCard() {
           </ul>
         </div>
 
-        {/** Freelance */}
-        <div>
-          <h3 className="text-lg font-semibold mb-1 md:text-2xl md:mb-2">
+        {/* Freelance */}
+        <div className="leading-relaxed">
+          <h3 className="text-xl font-semibold mb-2 md:text-2xl md:mb-2">
             Golang & React Developer – Freelancer
           </h3>
-          <p className="text-gray-800 mb-1 text-xs md:text-base">
+          <p className="text-gray-800 mb-2 text-sm md:text-base">
             📅 Enero 2023 – Actualidad | 📍 United States
           </p>
-          <ul className="list-disc list-inside text-gray-800 space-y-1 text-xs md:text-base">
+          <ul className="list-disc list-inside text-gray-800 space-y-2 text-sm md:text-base">
             <li>Desarrollo de aplicaciones web y APIs REST con arquitectura hexagonal.</li>
             <li>Interfaces accesibles y experiencias optimizadas para ONGs y marcas.</li>
             <li>Automatización de procesos, integración con servicios de terceros, y despliegue en Vercel y AWS.</li>
@@ -81,10 +81,10 @@ export default function AboutCard() {
           </ul>
         </div>
 
-        {/** Stack */}
-        <div>
-          <h3 className="text-lg font-semibold mb-1 md:text-2xl md:mb-2">Stack</h3>
-          <p className="text-gray-800 text-xs md:text-base">
+        {/* Stack */}
+        <div className="leading-relaxed">
+          <h3 className="text-xl font-semibold mb-2 md:text-2xl md:mb-2">Stack</h3>
+          <p className="text-gray-800 text-sm md:text-base space-y-1">
             <strong>Golang & React</strong>, TypeScript, Next.js, MySQL, AWS, Docker, Tailwind, Postman. <br />
             Gin, Echo, Go Modules, Testify, Wire, DataDog, New Relic. <br />
             Framer Motion, Radix UI, CSS Modules. <br />
@@ -94,10 +94,10 @@ export default function AboutCard() {
         </div>
       </div>
 
-      <div className="mt-6 md:mt-8 flex justify-start">
+      <div className="mt-8 md:mt-8 flex justify-start">
         <a
           href="/CV-HuilenVilches.pdf"
-          className="bg-white border border-gray-300 text-gray-800 px-3 py-1 rounded shadow hover:bg-gray-100 transition text-xs md:text-sm"
+          className="bg-white border border-gray-300 text-gray-800 px-4 py-2 rounded shadow hover:bg-gray-100 transition text-sm md:text-sm"
           download
         >
           Descargar CV ⚛️
