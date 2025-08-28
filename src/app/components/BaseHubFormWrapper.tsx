@@ -2,10 +2,10 @@
 import { Pump } from "basehub/react-pump";
 import { BaseHubForm } from "./BaseHubForm";
 
-interface ContactForm {
+interface ContactFormData {
   form: {
-    ingestKey: BaseHubIngestKey;
-    schema: any;
+    ingestKey: unknown;
+    schema: unknown;
   };
 }
 
@@ -23,7 +23,7 @@ export function BaseHubFormWrapper() {
         },
       ]}
     >
-      {async ([{ contactForm }]: [{ contactForm: ContactForm }]) => {
+      {async ([{ contactForm }]: [{ contactForm: ContactFormData }]) => {
         "use server";
         
         return (

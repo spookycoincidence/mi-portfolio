@@ -15,12 +15,9 @@ interface FormField {
   required?: boolean;
 }
 
-// Tipo específico para tu evento
-type BaseHubIngestKey = `bshb_event_317471939:${string}`;
-
 interface BaseHubFormProps {
-  ingestKey: BaseHubIngestKey;
-  schema: any;
+  ingestKey: unknown;
+  schema: unknown;
 }
 
 export function BaseHubForm({ ingestKey, schema }: BaseHubFormProps) {
@@ -65,14 +62,14 @@ export function BaseHubForm({ ingestKey, schema }: BaseHubFormProps) {
         className="space-y-4 max-w-md mx-auto text-left relative z-20"
         action={handleSubmit}
       >
-        {Array.isArray(schema) && schema?.map((field: any) => {
-          const Input = field.type === "textarea" ? "textarea" : "input";
+        {Array.isArray(schema) && (schema as Array<Record<string, unknown>>)?.map((field) => {
+          const Input = (field as Record<string, unknown>).type === "textarea" ? "textarea" : "input";
           return (
-            <label key={field.id} className="flex gap-x-2">
-              <span className="sr-only">{field.label}</span>
+            <label key={(field as Record<string, unknown>).id as string} className="flex gap-x-2">
+              <span className="sr-only">{(field as Record<string, unknown>).label as string}</span>
               <Input
-                {...field}
-                rows={field.type === "textarea" ? 4 : undefined}
+                {...(field as Record<string, unknown>)}
+                rows={(field as Record<string, unknown>).type === "textarea" ? 4 : undefined}
                 className="w-full border border-gray-300 rounded p-2 shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-pink-200"
               />
             </label>

@@ -8,16 +8,17 @@ export interface FormSubmissionResult {
   error?: string;
 }
 
-// Versión directa con tu ID específico
+// Usamos unknown para evitar conflictos de tipos con BaseHub
 export async function submitForm(
-  ingestKey: `bshb_event_317471939:${string}`,
-  schema: any,
+  ingestKey: unknown,
+  schema: unknown,
   formData: FormData
 ): Promise<FormSubmissionResult> {
   try {
+    // Cast a los tipos que BaseHub espera internamente
     const parsedSubmission = parseFormData(
-      ingestKey,
-      schema,
+      ingestKey as Parameters<typeof parseFormData>[0],
+      schema as Parameters<typeof parseFormData>[1],
       formData
     );
     
@@ -28,7 +29,10 @@ export async function submitForm(
       };
     }
     
-    await sendEvent(ingestKey, parsedSubmission.data);
+    await sendEvent(
+      ingestKey as Parameters<typeof sendEvent>[0], 
+      parsedSubmission.data
+    );
     
     return {
       success: true
