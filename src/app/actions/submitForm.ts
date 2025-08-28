@@ -1,3 +1,4 @@
+// src/app/actions/submitForm.ts
 'use server';
 
 import { parseFormData, sendEvent } from "basehub/events";
@@ -7,13 +8,18 @@ export interface FormSubmissionResult {
   error?: string;
 }
 
+// Versión directa con tu ID específico
 export async function submitForm(
-  ingestKey: string,
+  ingestKey: `bshb_event_317471939:${string}`,
   schema: any,
   formData: FormData
 ): Promise<FormSubmissionResult> {
   try {
-    const parsedSubmission = parseFormData(ingestKey, schema, formData);
+    const parsedSubmission = parseFormData(
+      ingestKey,
+      schema,
+      formData
+    );
     
     if (!parsedSubmission.success) {
       return {
@@ -28,6 +34,7 @@ export async function submitForm(
       success: true
     };
   } catch (error) {
+    console.error('Form submission error:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Unknown error occurred'

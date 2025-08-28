@@ -1,12 +1,26 @@
-'use client';
+// src/app/components/BaseHubForm.tsx
+'use client'; 
 
 import { useRef, useTransition } from "react";
 import { submitForm } from "../actions/submitForm";
 import { createConfetti } from "../utils/confetti";
 
+// Definimos el tipo específico para el schema
+interface FormField {
+  id: string;
+  label: string;
+  type: string;
+  name: string;
+  placeholder?: string;
+  required?: boolean;
+}
+
+// Tipo específico para tu evento
+type BaseHubIngestKey = `bshb_event_317471939:${string}`;
+
 interface BaseHubFormProps {
-  ingestKey: string;
-  schema: any[];
+  ingestKey: BaseHubIngestKey;
+  schema: any;
 }
 
 export function BaseHubForm({ ingestKey, schema }: BaseHubFormProps) {
@@ -15,13 +29,18 @@ export function BaseHubForm({ ingestKey, schema }: BaseHubFormProps) {
 
   const handleSubmit = async (formData: FormData) => {
     startTransition(async () => {
-      const result = await submitForm(ingestKey, schema, formData);
-      
-      if (result.success && canvasRef.current) {
-        // confetti animation
-        createConfetti(canvasRef.current);
-      } else if (!result.success && result.error) {
-        console.error('Form submission error:', result.error);
+      try {
+        const result = await submitForm(ingestKey, schema, formData);
+        
+        if (result.success && canvasRef.current) {
+          // confetti animation
+          createConfetti(canvasRef.current);
+        } else if (!result.success && result.error) {
+          console.error('Form submission error:', result.error);
+          // Opcional: mostrar error al usuario
+        }
+      } catch (error) {
+        console.error('Unexpected error:', error);
       }
     });
   };
@@ -46,14 +65,14 @@ export function BaseHubForm({ ingestKey, schema }: BaseHubFormProps) {
         className="space-y-4 max-w-md mx-auto text-left relative z-20"
         action={handleSubmit}
       >
-        {schema.map((field) => {
+        {Array.isArray(schema) && schema?.map((field: any) => {
           const Input = field.type === "textarea" ? "textarea" : "input";
           return (
             <label key={field.id} className="flex gap-x-2">
               <span className="sr-only">{field.label}</span>
               <Input
                 {...field}
-                rows={4}
+                rows={field.type === "textarea" ? 4 : undefined}
                 className="w-full border border-gray-300 rounded p-2 shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-pink-200"
               />
             </label>
